@@ -5,7 +5,7 @@ title                    : "Zarif Masud"
 title_separator          : "-"
 name                     : &name "Zarif Masud"
 description              : &description "PhD student at TMU • Responsible AI, Information Retrieval, & Migration Tech"
-url                      : https://thezarif.github.io
+url                      : https://www.zarifmasud.net
 baseurl                  : ""  # user site = empty
 repository               : "TheZarif/thezarif.github.io"
 
