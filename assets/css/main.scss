@@ -48,4 +48,6 @@
   width: 150px !important;          /* adjust as preferred */
   height: 150px !important;         /* force square shape */
   object-fit: cover !important;     /* crops instead of stretching */
+  object-position: center 0% !important; /* adjust vertical position as preferred */
+  border:none !important;          /* remove any borders */
 }
