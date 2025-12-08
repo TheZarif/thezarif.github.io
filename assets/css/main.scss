@@ -41,3 +41,11 @@
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
+
+/* --- Make profile photo circular --- */
+.author__avatar img {
+  border-radius: 50% !important;   /* makes it circular */
+  width: 150px !important;          /* adjust as preferred */
+  height: 150px !important;         /* force square shape */
+  object-fit: cover !important;     /* crops instead of stretching */
+}
