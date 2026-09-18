@@ -109,7 +109,7 @@
   vertical-align: top;
   padding-left: 15px;
   padding-right: 25px;
-  line-height: 1;
+  line-height: 1.45;
 
   @include breakpoint($large) {
     display: block;
@@ -129,7 +129,9 @@
 }
 .sidebar .author__name {
   font-family: $sans-serif;
-  font-size: $type-size-5;
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
 }
 
 .sidebar .author__desktop {
@@ -150,6 +152,7 @@
 
 .author__bio {
   margin: 0;
+  color: var(--global-text-color-light);
 
   @include breakpoint($large) {
     margin-top: 10px;

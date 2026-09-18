@@ -12,8 +12,7 @@
     "vendor/breakpoint/breakpoint",
 
     "themes",
-    "theme/{{ site.site_theme | default: 'default' | append: '_light' }}",
-    "theme/{{ site.site_theme | default: 'default' | append: '_dark' }}",
+    "theme/default_light",
 
     "include/mixins",
     "vendor/susy/susy",
@@ -33,6 +32,7 @@
     "layout/forms",
 
     "layout/page",
+    "layout/home",
     "layout/archive",
     "layout/sidebar",
     "layout/json_cv",
@@ -44,12 +44,21 @@
 
 /* --- Make profile photo circular --- */
 .author__avatar img {
-  border-radius: 50% !important;   /* makes it circular */
-  width: 150px !important;          /* adjust as preferred */
-  height: 150px !important;         /* force square shape */
-  object-fit: cover !important;     /* crops instead of stretching */
-  object-position: center 0% !important; /* adjust vertical position as preferred */
-  border:none !important;          /* remove any borders */
+  border-radius: 50% !important;
+  width: 150px !important;
+  height: 150px !important;
+  max-width: 100% !important;
+  object-fit: cover !important;
+  object-position: center 0% !important;
+  border:none !important;
+}
+
+@media (min-width: 925px) {
+  .author__avatar img {
+    width: 190px !important;
+    height: 190px !important;
+    max-width: 190px !important;
+  }
 }
 
 /* --- Inter font weights for professional, thin look --- */

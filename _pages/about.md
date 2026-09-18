@@ -7,61 +7,48 @@ redirect_from:
   - /about.html
 ---
 
-I'm a PhD student in Computer Engineering at Toronto Metropolitan University, co-supervised by Dr. Ebrahim Bagheri and Dr. Syed Ishtiaque Ahmed. My research interests sit at the intersection of responsible AI, social computing, and migration studies. Using techniques from natural language processing and information retrieval, I take a critical lens to observe how immigration is framed across various media and popular culture, and how data driven systems embed within them biased frames that end up marginalizing migrants.
-
-## Current Projects
+<div class="home-intro">
+  <p class="home-intro__kicker">PhD Student · Faculty of Information · University of Toronto</p>
+  <p class="home-intro__lead">I study how digital information systems shape the ways migration and migrants are represented, understood, and made knowable.</p>
+  <p class="home-intro__body">Drawing on migration and critical algorithm studies, I examine how computational systems, from search engines to generative AI, select, organize, and transform narratives about migration. Using computational methods alongside theories of framing and representation, my work investigates how emerging forms of algorithmic knowledge reshape the social and political imaginaries of migration.</p>
+  <p class="home-intro__supervision">Co-supervised by Dr. Ebrahim Bagheri and Dr. Syed Ishtiaque Ahmed.</p>
+</div>
 
 {% include base_path %}
 
-<style>
-.project-item {
-  margin-bottom: 0.75em;
-}
-.project-title {
-  margin-bottom: 0.25em;
-  color: var(--global-heading-color);
-}
-.project-title a {
-  color: var(--global-heading-color);
-}
-.project-excerpt {
-  font-size: 0.9em;
-  margin-top: 0.25em;
-  margin-bottom: 0.5em;
-}
-.publication-item {
-  margin-bottom: 0.75em;
-}
-.publication-title {
-  margin-bottom: 0.25em;
-  color: var(--global-heading-color);
-}
-.publication-title a {
-  color: var(--global-heading-color);
-}
-.publication-venue {
-  font-size: 0.9em;
-  margin-top: 0.25em;
-  margin-bottom: 0.5em;
-}
-</style>
-
 {% assign current_projects = site.projects | sort: "date" | reverse %}
 
+<section class="home-section" aria-labelledby="home-projects-title">
+  <div class="home-section__heading">
+    <h2 id="home-projects-title">Selected Projects</h2>
+    <a href="{{ base_path }}/projects/">Explore projects <span aria-hidden="true">→</span></a>
+  </div>
+  <div class="home-list">
 {% for project in current_projects %}
-<div class="project-item">
-<div class="project-title"><strong><a href="{{ base_path }}{{ project.url }}">{{ project.title }}</a></strong></div>
-<div class="project-excerpt">{{ project.excerpt }}</div>
-</div>
+    <article class="home-entry">
+      <p class="home-entry__meta">{{ project.type }}{% if project.venue %} · {{ project.venue }}{% endif %}</p>
+      <h3 class="home-entry__title"><a href="{{ base_path }}{{ project.url }}">{{ project.title }}</a></h3>
+      <p class="home-entry__description">{{ project.excerpt }}</p>
+    </article>
 {% endfor %}
-
-## Recent Publications
+  </div>
+</section>
 
 {% assign recent_pubs = site.publications | sort: "year" | reverse %}
 
+<section class="home-section" aria-labelledby="home-publications-title">
+  <div class="home-section__heading">
+    <h2 id="home-publications-title">Recent Publications</h2>
+    <a href="{{ base_path }}/publications/">All publications <span aria-hidden="true">→</span></a>
+  </div>
+  <div class="home-list">
 {% for pub in recent_pubs limit:3 %}
-<div class="publication-item">
-<div class="publication-title"><strong><a href="{{ base_path }}{{ pub.url }}">{{ pub.title }}</a></strong></div>
-<div class="publication-venue">{% if pub.authors %}{{ pub.authors }}. {% endif %}{% if pub.year %}({{ pub.year }}). {% endif %}{% if pub.venue %}{{ pub.venue }}{% endif %}</div>
-</div>
+    <article class="home-entry">
+      <p class="home-entry__meta">{{ pub.year }}{% if pub.status == 'accepted' %} · Accepted{% endif %}</p>
+      <h3 class="home-entry__title"><a href="{{ base_path }}{{ pub.url }}">{{ pub.title }}</a></h3>
+      {% if pub.authors %}<p class="home-entry__authors">{{ pub.authors }}</p>{% endif %}
+      {% if pub.venue %}<p class="home-entry__description">{{ pub.venue }}</p>{% endif %}
+    </article>
 {% endfor %}
+  </div>
+</section>

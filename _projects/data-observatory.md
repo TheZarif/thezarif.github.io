@@ -4,7 +4,7 @@ collection: projects
 permalink: /projects/data-observatory
 date: 2024-11-15
 type: "Infrastructure"
-venue: "Bridging Divides / TMU"
+venue: "Bridging Divides / Toronto Metropolitan University"
 excerpt: "Building an AI-assisted, human-in-the-loop data pipeline to collect, structure, and analyze immigration-related texts from parliamentary debates, news, and online platforms."
 tags:
   - Data Infrastructure
@@ -12,11 +12,9 @@ tags:
   - Responsible AI
   - Immigration Discourse
   - NLP Pipeline
-image: /images/projects/data-observatory.png   # optional
-link: https://github.com/your-username/data-observatory   # optional
 ---
 
-The Data Observatory is a modular platform designed to support empirical research on immigration discourse. It combines automated web scraping, LLM-assisted preprocessing, and human-in-the-loop validation to collect and analyze texts from parliamentary debates, policy documents, news media, and online forums.
+The Data Observatory is part of the [Observatory on Immigration Discourses (IDIO)](https://www.torontomu.ca/bridging-divides/research/research-projects/citizenship-and-participation/observatory-on-immigration-discourses/) at Bridging Divides. It is a modular platform designed to support empirical research on immigration discourse. It combines automated web scraping, LLM-assisted preprocessing, and human-in-the-loop validation to collect and analyze texts from parliamentary debates, policy documents, news media, and online forums.
 
 ## Goals
 
@@ -35,7 +33,7 @@ The Data Observatory is a modular platform designed to support empirical researc
 
 ## Status and Outputs
 
-- **Status:** Under active development and use in multiple projects (e.g., parliamentary discourse on AI and immigration, Reddit-based immigration studies).
+- **Status:** Active. The IDIO website is live, with ongoing development and research activity.
 - **Outputs:**
   - A shared data infrastructure for the Bridging Divides program.
   - Scripts and documentation for reproducible scraping and analysis.

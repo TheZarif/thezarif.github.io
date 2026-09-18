@@ -1,24 +1,23 @@
 # Basic Site Settings
 locale                   : "en-US"
-site_theme               : "default" # options: "default", "air"
 title                    : "Zarif Masud"
 title_separator          : "-"
 name                     : &name  "Zarif Masud"
-description              : &description "PhD student at TMU • Responsible AI, Information Retrieval, & Migration Tech"
+description              : &description "PhD Student at the Faculty of Information, University of Toronto, studying how digital information systems shape representations of migration and migrants"
 url                      : https://www.zarifmasud.net
 baseurl                  : ""  # user site = empty
-repository               : "TheZarif/thezarif.github.io"
+repository               : "TheZarif/zarifmasud.github.io"
 
 # Site Author (left sidebar/profile card)
 author:
   avatar           : "profile.jpg"          # put your headshot at /images/profile.png or /assets/images/profile.png depending on theme
   name             : "Zarif Masud"
   pronouns         :
-  bio              : "PhD student in Computer Engineering at Toronto Metropolitan University. Researching Responsible AI, information retrieval, and migration."
+  bio              : "PhD Student at the Faculty of Information"
   location         : "Toronto, Canada"
-  employer         : "Toronto Metropolitan University"
+  employer         : "University of Toronto"
   uri              :
-  email            : "zarif.masud@torontomu.ca"
+  email            : "zarif.masud@mail.utoronto.ca"
 
   # Academic websites
   academia         :
@@ -51,7 +50,7 @@ author:
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         :
+  linkedin         : "zarifmasud"
   mastodon         :
   medium           :
   pinterest        :
@@ -70,7 +69,7 @@ author:
 # Publication Category Headings
 publication_category:
   manuscripts:
-    title: "Journal Articles & Workshops"
+    title: "Journal, Conference & Workshop Papers"
   thesis:
     title: "Thesis"
   books:
@@ -82,7 +81,7 @@ publication_category:
 teaser                   :
 breadcrumbs              : false
 words_per_minute         : 160
-future                   : true
+future                   : false
 read_more                : "disabled"
 talkmap_link             : false
 comments:
@@ -128,13 +127,14 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 : /images/profile.jpg     # default share image
+og_image                 : profile.jpg             # path is prepended with /images/ by the SEO template
 og_description           : *description
 social:
   type                   : Person
   name                   : *name
   links:
     - https://github.com/TheZarif
+    - https://www.linkedin.com/in/zarifmasud
 
 # Analytics
 analytics:
@@ -168,10 +168,15 @@ exclude:
   - LICENSE
   - local
   - log
+  - markdown_generator
   - node_modules
   - package.json*
   - Rakefile
   - README
+  - talkmap
+  - talkmap.py
+  - talkmap.ipynb
+  - talkmap_out.ipynb
   - tmp
   - vendor
 keep_files:
@@ -250,6 +255,12 @@ defaults:
       author_profile: true
       share: true
       comments: true
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: single
+      author_profile: true
   - scope:
       path: ""
       type: portfolio

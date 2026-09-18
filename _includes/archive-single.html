@@ -41,7 +41,9 @@
         {% if post.collection == 'teaching' %}
           <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif post.collection == 'publications' %}
-          {% if post.year %}
+          {% if post.status == 'accepted' %}
+            <p>Accepted for <i>{{ post.venue }}</i></p>
+          {% elsif post.year %}
             <p>Published in <i>{{ post.venue }}</i>, {{ post.year }} </p>
           {% elsif post.date %}
             <p>Published in <i>{{ post.venue }}</i>, {{ post.date | date: "%Y" }} </p>
@@ -61,7 +63,7 @@
     {% assign links = "" %}
     {% if post.paperurl and post.paperurl != "" and post.paperurl != nil %}
       {% if links != "" %}{% assign links = links | append: " | " %}{% endif %}
-      {% assign links = links | append: '<a href="' | append: post.paperurl | append: '">Download Paper</a>' %}
+      {% assign links = links | append: '<a href="' | append: post.paperurl | append: '">View Publication</a>' %}
     {% endif %}
     {% if post.slidesurl and post.slidesurl != "" and post.slidesurl != nil %}
       {% if links != "" %}{% assign links = links | append: " | " %}{% endif %}

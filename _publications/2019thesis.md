@@ -1,5 +1,6 @@
 ---
 title: "Switching GAN-Based Image Filters to Improve Perception for Autonomous Driving"
+published: false
 authors: "Zarif Masud"
 category: thesis
 venue: "University of Waterloo Thesis"

@@ -6,4 +6,4 @@ author_profile: true
 redirect_from:
   - /resume
 ---
-Download my full CV [here](/files/zarifmasud_cv.pdf).
+Download my [CV](/files/zarifmasud_cv.pdf).

@@ -4,7 +4,7 @@ collection: projects
 permalink: /projects/ai-immigration
 date: 2024-10-01
 type: "Writing"
-venue: "Book chapter (forthcoming)"
+venue: "Book chapter (2026)"
 excerpt: "A critical overview of how AI and digital technologies are reshaping immigration systems, from risk assessment and border control to application processing and integration support."
 tags:
   - AI and Society
@@ -12,8 +12,6 @@ tags:
   - Algorithmic Governance
   - Human Rights
   - Critical Data Studies
-image: /images/projects/ai-immigration-book.png   # optional
-link: https://zarifmasud.net/   # or future preprint link
 ---
 
 This book chapter surveys the growing use of AI and digital technologies across the immigration lifecycle, from forecasting migration flows and automating application processing to biometric border control and risk-scoring systems. It situates these developments within broader debates on algorithmic governance, discrimination, and the rights of migrants.
@@ -34,5 +32,5 @@ This book chapter surveys the growing use of AI and digital technologies across 
 
 ## Status and Outputs
 
-- **Status:** Chapter drafted and under revision.
-- **Output:** A book chapter aimed at scholars and practitioners working at the intersection of AI governance, migration, and human rights, providing both a conceptual map and concrete case studies.
+- **Status:** Published chapter in the *Handbook on Migration and Artificial Intelligence* (Edward Elgar Publishing, 2026).
+- **Output:** [The Role of Artificial Intelligence in Immigration: From Automation to Accountability](https://www.e-elgar.com/shop/usd/handbook-on-migration-and-artificial-intelligence-9781035331611.html).

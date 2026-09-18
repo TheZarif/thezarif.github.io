@@ -1,0 +1,17 @@
+---
+---
+{% assign redirect_href = page.redirect.to | replace: site.url, '' %}
+<!doctype html>
+<html lang="{{ site.locale | slice: 0, 2 }}">
+  <head>
+    <meta charset="utf-8">
+    <title>Redirecting&hellip;</title>
+    <link rel="canonical" href="{{ page.redirect.to }}">
+    <meta name="robots" content="noindex">
+    <meta http-equiv="refresh" content="0; url={{ redirect_href }}">
+    <script>location.replace({{ redirect_href | jsonify }});</script>
+  </head>
+  <body>
+    <p>Redirecting to <a href="{{ redirect_href }}">{{ redirect_href }}</a>.</p>
+  </body>
+</html>
